@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="section_1">
+    <video id="remoteVideo" autoplay playsinline></video>
+    <video id="webcamVideo" class="center" autoplay playsinline muted></video><br/>
+    <button id="webcamButton" class="btn center hide">Start Camera</button>
+  </div>
+
+  <div class="controls center">
+    <div class="before_call_control" id="before_call_control">
+      <input id="callInput" placeholder="Enter invitation code" />
+      <button class="btn btn-primary" id="callButton">Start Chat</button>
+    </div>
+    <div class="on_call_control hide" id="on_call_control">
+      <button class="btn btn-danger" id="hangupButton">Hang Up</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

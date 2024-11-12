@@ -1,0 +1,16 @@
+{
+  "name": "video-chat-app",
+  "version": "1.0.0",
+  "description": "A simple video chat app with room codes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "socket.io": "^4.8.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
